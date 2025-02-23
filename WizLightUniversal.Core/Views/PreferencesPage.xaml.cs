@@ -38,7 +38,8 @@ namespace WizLightUniversal.Core.Views
         private int VerifyHomeID()
         {
             string text = HomeIDEntry.Text;
-            return text.Length == 6 && int.TryParse(text, out int homeId) ? homeId : 0;
+            //return text.Length == 6 && int.TryParse(text, out int homeId) ? homeId : 0;
+            return int.TryParse(text, out int homeId) ? homeId : 0;
         }
     }
 }
